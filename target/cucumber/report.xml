@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="20.56">
-    <testcase classname="Test login functionality" name="Verify Login With Valid Credentials" time="12.612">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.467">
+    <testcase classname="Test location page functionality" name="Verify all job dropdown options are visible" time="32.274">
         <system-out>
             <![CDATA[Given the user is opening website...........................................passed
-When the user enters valid credentials and clicks on login button...........passed
+When the user enters username as "admin" and passowrd as "admin123" and clicks on login button.passed
 Then verify if the user is on home page.....................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="Test login functionality" name="Verify Login With blank Credentials" time="7.778">
-        <system-out>
-            <![CDATA[Given the user is opening website...........................................passed
-When the user enters blank credentials and clicks on login button...........passed
-Then verify if error message is displayed...................................passed
+When The user hovers on Admin and hovers over Oraganization and click on Locations.passed
+Then print data for locations...............................................passed
 ]]>
         </system-out>
     </testcase>
