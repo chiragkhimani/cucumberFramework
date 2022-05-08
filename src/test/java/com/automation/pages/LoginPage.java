@@ -1,19 +1,9 @@
 package com.automation.pages;
 
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
 
 import com.automation.utils.HelperUtils;
 import com.automation.utils.PropertyUtils;
@@ -35,7 +25,6 @@ public class LoginPage extends BasePage{
 	@FindBy(xpath="//div[@id='forgotPasswordLink']/a")
 	public WebElement forgetPasswordLink;
 
-	 
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}

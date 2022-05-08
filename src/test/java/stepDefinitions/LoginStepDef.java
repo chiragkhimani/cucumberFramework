@@ -1,7 +1,5 @@
 package stepDefinitions;
 
-
-
 import com.automation.pages.HomePage;
 import com.automation.pages.LoginPage;
 import com.automation.utils.DriverUtils;
@@ -38,15 +36,21 @@ public class LoginStepDef{
 	public void the_user_is_opening_website() {
 		login.openWebsite();
 	}
-	@When("the user enters valid credentials and clicks on login button")
-	public void the_user_enters_valid_credentials_and_clicks_on_login_button() {
-		login.doLogin(PropertyUtils.getProperty("login.username"), PropertyUtils.getProperty("login.password"));
-	}
+	
 	@Then("verify if the user is on home page")
 	public void verify_if_the_user_is_on_home_page() {
 		 home.verifyHomePageAfterLogin();
 	}
 
+	@When("the user enters username as {string} and passowrd as {string} and clicks on login button")
+	public void the_user_enters_username_as_and_passowrd_as_and_clicks_on_login_button(String username, String password) {
+	    login.doLogin(username, password);
+	}
+	
+	@When("the user enters {string} and {string} and clicks on login button")
+	public void the_user_enters_and_and_clicks_on_login_button(String invalidUsername, String invalidPassword) {
+	    login.doLogin(invalidUsername, invalidPassword);
+	}
 
 
 
