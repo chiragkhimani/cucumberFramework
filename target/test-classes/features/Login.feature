@@ -1,6 +1,6 @@
 Feature: Test login functionality
 
-@smoke @valid 
+@smoke @valid @smoketest
 Scenario: Verify Login With Valid Credentials
 	Given the user is opening website
 	When the user enters username as "admin" and passowrd as "admin123" and clicks on login button
